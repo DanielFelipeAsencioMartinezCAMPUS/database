@@ -10,8 +10,6 @@ class db{
         try {
             $conn = new PDO('mysql:host=localhost;dbname=shop', $this->user, $this->pass);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo 'correct connection';
-
         }
         catch (PDOException $e){
             $message = $e->getMessage();

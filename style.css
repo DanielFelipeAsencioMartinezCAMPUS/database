@@ -1,0 +1,8 @@
+body{
+    background-image: url(./img/cyberpunk-city-art.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter:unset ;
+    color: aliceblue;
+}
