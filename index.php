@@ -1,5 +1,7 @@
 <?php 
-
+    require_once ('./config/config.php');
+     $data = new db;
+     $data->connect();
 ?>
 
 <!doctype html>
