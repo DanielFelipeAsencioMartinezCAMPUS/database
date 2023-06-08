@@ -17,7 +17,7 @@
   <div class="md:container md:mx-auto">
              <div class="grid p-3 text-zinc-50">
              <div class="max-w-md mx-auto mt-4">
-             <form class="bg-inherit  rounded px-8 pt-6 pb-8 mb-4" id='form'>
+             <form class="bg-inherit  rounded px-8 pt-6 pb-8 mb-4" id='form' action="./php/getdata.php" method="POST"> 
                <div class="mb-4">
                  <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">
                    Nombre
@@ -31,6 +31,12 @@
                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="contrasena" type="password" placeholder="Ingrese su contraseña">
                </div>
                <div class="mb-4">
+                 <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                   email
+                 </label>
+                 <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Ingrese su email">
+               </div>
+               <div class="mb-4">
                  <label class="block text-gray-700 text-sm font-bold mb-2" for="productos">
                    Productos
                  </label>
@@ -42,7 +48,7 @@
                  </div>
                </div>
                <div class="flex items-center justify-between">
-                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" name="submit" type="submit">
                    Enviar
                  </button>
                  <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="reset">
